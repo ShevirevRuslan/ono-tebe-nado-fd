@@ -1,1 +1,91 @@
 /* место для вашего кода */
+.header {
+height: 293px;
+display: grid;
+grid-template-columns: 1fr min-content 1fr;
+align-items: center;
+padding: 10px 50px;
+}
+.header__links-list {
+    display: flex;
+    gap: 30px;
+    list-style: circle;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 100%;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__logo {
+    display: block;
+}
+
+.header__logo-image {
+    width: 148px;
+}
+
+.adress {
+    display: flex;
+    flex-direction: column;
+    max-width: 240px;
+    justify-self: end;
+}
+
+.company_adress {
+}
+.main {
+}
+.cover {
+    background-image: url(../images/cover.jpg);
+}
+
+.title {
+    font-weight: bold;
+}
+
+
+.company_name {
+}
+.description {
+}
+.description_button {
+}
+.lots {
+    margin-top: 180px;
+    padding: 0 24px;
+}
+.title {
+}
+.cards {
+}
+.card {
+}
+
+.card_1 {
+    background-image: url(../images/card-lot-01.jpg);
+}
+
+.card_2 {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_3 {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
+.about {
+    margin-top: 180px;
+    padding: 0 24px;
+}
+.logo_column {
+    background-color: rgba(0, 0, 0, 1);
+;
+}
+.about_column {
+}
+.footer {
+    margin-top: 180px;
+}
