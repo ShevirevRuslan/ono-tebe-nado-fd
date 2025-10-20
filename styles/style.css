@@ -3,7 +3,7 @@
 html{
     background-color: gray;
 }
-
+/* селекторы шапки */
 .header {
 background-color: white;
 display: grid;
@@ -47,7 +47,7 @@ padding: 92px 50px 96px 50px;
     line-height: 24.3px;
     max-width: 240px;
 }
-
+ /* селекторы кавера */
 .main {
     position: relative;
 }
@@ -63,76 +63,70 @@ padding: 92px 50px 96px 50px;
     display: grid;
     background-image: url(../images/cover.jpg);
     background-size: cover;
+    background-position: 50% 100%;
     background-repeat: no-repeat;
     min-height: 757px;
 }
 
 .cover_title{
-    font-family: 'Raleway-bold', sans-serif;
     color: rgba(255, 255, 255, 1);
     text-transform: uppercase;
     font-weight: 700;
     font-size: 100px;
     z-index: 2;
+    letter-spacing: 30px;
+    padding-top: 165px;
+    padding-left: 50px;
 }
 
 .aligned-text{
     display: block;
 }
 
-.letter-spacing-extended{
-    letter-spacing: 30px;
-}
-
 .no-letter-spacing{
     letter-spacing: 0px;
 }
 
-.aligned-text_left{
-padding: 165px 0 0 50px;
-}
-
 .aligned-text_center{
     text-align: center;
+    padding: 18px ;
+    padding-right: 40px;
 }
 
 .aligned-text_right{
     text-align: right;
+    padding-right: 50px;
 }
 
 .cover__description{
-    height: 28px;
-    padding-top: 118px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
     z-index: 2;
 }
 
 .cover__description-text{
-    font-weight: 100;
     font-size: 22px;
+    font-weight: 400;
     line-height: 28px;
     letter-spacing: 0%;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
-    word-spacing: 34px;
+    word-spacing: 18.5px;
 }
 
 .bet-button{
     height: 51px;
     color: rgba(255, 255, 255, 1);
     font-size: 22px;
+    font-weight: 500;
+    line-height: 100%;
     text-transform: uppercase;
     border: 1px solid rgba(255, 255, 255, 1);
-    padding: 12px 32px 11px 31px ;
+    padding: 12px 32px ;
 }
 
-.company_name {
-}
-.description {
-}
-.description_button {
-}
 .lots {
     margin-top: 180px;
     padding: 0 24px;
