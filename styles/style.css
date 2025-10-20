@@ -6,20 +6,25 @@ html{
 
 .header {
 background-color: white;
-height: 293px;
 display: grid;
 grid-template-columns: 1fr min-content 1fr;
 align-items: center;
-padding: 95px 50px 95px 50px;
+font-size: 18px;
+text-underline-offset: 4px;
+padding: 92px 50px 96px 50px;
 }
 
 .header__links-list {
     display: flex;
-    gap: 30px;
+    gap: 33px;
     list-style: circle;
     font-weight: normal;
-    font-size: 18px;
     line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.header__links-list_no-underline{
+    text-decoration: none;
 }
 
 .header__links-list-item_no-bullit {
@@ -32,14 +37,15 @@ padding: 95px 50px 95px 50px;
 
 .header__logo-image {
     width: 148px;
+    height: 105px;
 }
 
 .adress {
     display: flex;
     flex-direction: column;
-    max-width: 240px;
     justify-self: end;
-    align-items: flex-start;
+    line-height: 24.3px;
+    max-width: 240px;
 }
 
 .main {
@@ -83,7 +89,7 @@ padding: 95px 50px 95px 50px;
 }
 
 .aligned-text_left{
-
+padding: 165px 0 0 50px;
 }
 
 .aligned-text_center{
@@ -96,14 +102,14 @@ padding: 95px 50px 95px 50px;
 
 .cover__description{
     height: 28px;
+    padding-top: 118px;
     display: flex;
     justify-content: space-around;
     z-index: 2;
 }
 
 .cover__description-text{
-    font-family: 'Raleway-normal', sans-serif;
-    font-weight: 400;
+    font-weight: 100;
     font-size: 22px;
     line-height: 28px;
     letter-spacing: 0%;
@@ -113,11 +119,12 @@ padding: 95px 50px 95px 50px;
 }
 
 .bet-button{
-    border: 1px solid;
+    height: 51px;
     color: rgba(255, 255, 255, 1);
     font-size: 22px;
     text-transform: uppercase;
-    padding: 12px 32px 11px 31px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 12px 32px 11px 31px ;
 }
 
 .company_name {
