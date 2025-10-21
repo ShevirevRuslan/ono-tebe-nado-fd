@@ -18,7 +18,7 @@ padding: 92px 50px 96px 50px;
     letter-spacing: 0%;
 }
 
-.header__links-list_no-underline{
+.header__links-list_no-underline {
     text-decoration: none;
 }
 
@@ -243,7 +243,7 @@ padding: 92px 50px 96px 50px;
     text-transform: uppercase;
     line-height: 100%;
     letter-spacing: 0%;
-    margin-bottom: 105px; 
+    margin-bottom: 105px;
 }
 
 .paragraphs__wrapper {
