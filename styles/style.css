@@ -130,12 +130,14 @@ padding: 92px 50px 96px 50px;
     margin-left: 40px;
     margin-bottom: 27px;
 }
+
 .lots__card-list {
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-    list-style: none; 
+    list-style: none;
 }
+
 .lots__card-list-item {
     width: 334px;
     min-height: 596px;
