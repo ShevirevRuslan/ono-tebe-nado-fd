@@ -15,15 +15,14 @@ padding: 92px 50px 96px 50px;
     list-style: circle;
     font-weight: normal;
     line-height: 100%;
-    letter-spacing: 0%;
-}
-
-.header__links-list_no-underline {
-    text-decoration: none;
 }
 
 .header__links-list-item_no-bullit {
     list-style: none;
+}
+
+.item_no-underline {
+    text-decoration: none;
 }
 
 .header__logo {
@@ -35,21 +34,16 @@ padding: 92px 50px 96px 50px;
     height: 105px;
 }
 
-.adress {
+.address {
     display: flex;
     flex-direction: column;
     justify-self: end;
+    font-size: 18px;
+    font-style: normal;
     line-height: 24.3px;
     max-width: 240px;
 }
  /* селекторы кавера */
-.overlay {
-    inset: 0;
-    position: absolute;
-    background-color: rgba(0, 0, 0, .6) ;
-    z-index: 1;
-}
-
 .cover {
     display: grid;
     position: relative;
@@ -58,6 +52,13 @@ padding: 92px 50px 96px 50px;
     background-position: 50% 100%;
     background-repeat: no-repeat;
     min-height: 757px;
+}
+
+.overlay {
+    inset: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, .6) ;
+    z-index: 1;
 }
 
 .cover_title {
@@ -75,10 +76,6 @@ padding: 92px 50px 96px 50px;
     display: block;
 }
 
-.no-letter-spacing {
-    letter-spacing: 0px;
-}
-
 .aligned-text_center {
     text-align: center;
     padding: 18px ;
@@ -88,6 +85,10 @@ padding: 92px 50px 96px 50px;
 .aligned-text_right {
     text-align: right;
     padding-right: 50px;
+}
+
+.no-letter-spacing {
+    letter-spacing: 0px;
 }
 
 .cover__description {
@@ -102,7 +103,6 @@ padding: 92px 50px 96px 50px;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
-    letter-spacing: 0%;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 1);
     word-spacing: 18.5px;
@@ -134,12 +134,18 @@ padding: 92px 50px 96px 50px;
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-    list-style: none;
+    list-style: none; 
 }
 .lots__card-list-item {
     width: 334px;
     min-height: 596px;
     position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.card_type_film {
+    background-image: url(../images/card-lot-01.jpg);
 }
 
 .card-link {
@@ -154,7 +160,6 @@ padding: 92px 50px 96px 50px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .card__title {
@@ -171,6 +176,7 @@ padding: 92px 50px 96px 50px;
     padding-top: 48px;
     z-index: 2;
 }
+
 .card__text {
     max-width: 254px;
     color: white;
@@ -180,32 +186,23 @@ padding: 92px 50px 96px 50px;
     z-index: 2;
 }
 
+.card_type_book {
+    background-image: url(../images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(../images/card-lot-03.jpg);
+}
+
 .lots__look-more-link {
     display: block;
+    max-width: fit-content;
     font-size: 20px;
     font-weight: 400;
     text-underline-offset: 4px;
     text-decoration-thickness: 1px;
     margin-top: 30px;
     margin-left: 40px;
-}
-
-.card_type_film {
-    background-image: url(../images/card-lot-01.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.card_type_book {
-    background-image: url(../images/card-lot-02.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.card_type_picture {
-    background-image: url(../images/card-lot-03.jpg);
-    background-size: cover;
-    background-position: center;
 }
 /*---------------*/
 .about {
@@ -215,6 +212,7 @@ padding: 92px 50px 96px 50px;
     grid-template-columns: 334px 1fr;
     grid-template-rows: auto;
 }
+
 .about__logo {
     background-color: rgba(0, 0, 0, 1);
     width: 240px;
@@ -242,7 +240,6 @@ padding: 92px 50px 96px 50px;
     font-size: 40px;
     text-transform: uppercase;
     line-height: 100%;
-    letter-spacing: 0%;
     margin-bottom: 105px;
 }
 
@@ -258,7 +255,6 @@ padding: 92px 50px 96px 50px;
     line-height: 24px;
 }
 
-
 .footer {
     margin-top: 180px;
     margin-bottom: 82px;
@@ -266,12 +262,8 @@ padding: 92px 50px 96px 50px;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.footer__adress {
-    display: flex;
-    flex-direction: column;
+.address-block__footer {
     justify-self: start;
-    font-size: 18px;
-    line-height: 24.3px;
     text-underline-offset: 4px;
     max-width: 287px;
     padding-left: 50px;
@@ -293,19 +285,15 @@ padding: 92px 50px 96px 50px;
     text-underline-offset: 4px;
 }
 
-.footer__menu-link_no-underline {
-    text-decoration: none;
-}
-
-.footer__social-icon {
-    width: 48px;
-    height: 48px;
-}
-
 .footer__social-list {
     display: flex;
     justify-content: end;
     gap: 48px;
     padding-right: 50px;
     list-style: none;
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
 }
